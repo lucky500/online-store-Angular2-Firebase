@@ -4,19 +4,6 @@ import { ALBUMS } from './mock-albums';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
-// export class AlbumService {
-//   albums: FirebaseListObservable<any[]>;
-
-//   constructor(private database: AngularFireDatabase) {
-//     // this.albums = database.list('albums');
-//   }
-
-//   getAlbums(){
-//     this.albums = this.database.list('/albums') as FirebaseListObservable<any[]>;
-//     return this.albums;
-//   }
-
-// }
 export class AlbumService {
   albums: FirebaseListObservable<any[]>;
 
@@ -26,5 +13,13 @@ export class AlbumService {
 
   getAlbums(){
     return this.albums;
+  }
+
+  getAlbumById(albumId: number){
+    // for (var i = 0; i <= ALBUMS.length - 1; i++) {
+    //   if (ALBUMS[i].id === albumId) {
+    //     return ALBUMS[i];
+    //   }
+    // }
   }
 }
