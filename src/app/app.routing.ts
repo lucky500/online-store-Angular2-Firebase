@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { MarketplaceComponent} from './marketplace/marketplace.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { AdminComponent } from './admin/admin.component';
+//import { EditListingComponent } from './edit-listing/edit-listing.component';
 
 
 
@@ -30,6 +31,10 @@ const appRoutes: Routes = [
     path: 'admin',
     component: AdminComponent
   }
+  // {
+  //   path: 'edit-listing/:id',
+  //   component: EditListingComponent
+  // }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
